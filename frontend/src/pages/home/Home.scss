@@ -1,0 +1,41 @@
+.infoboxes {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    //   margin-right: 5px;
+  }
+  .infobox {
+    width: 23rem;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    //   margin-right: 2rem;
+    display: flex;
+    cursor: pointer;
+  
+    .icon {
+      width: 35%;
+    }
+    .text {
+      h4 {
+        //   color: #aaa;
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .infobox:hover {
+    border-color: #007bff; /* Change border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transform: translateY(-5px); /* Lift the box slightly */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  @media (max-width: 768px) {
+    .infobox {
+      width: 18rem; /* Adjust width for smaller screens */
+    }
+  }
+    

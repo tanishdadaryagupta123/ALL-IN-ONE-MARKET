@@ -1,0 +1,81 @@
+.profile {
+  .card {
+    width: 100%;
+    max-width: 600px; /* Increased max-width for better alignment */
+    padding: 2rem; /* Increased padding for more space */
+    border: 1px solid #030b6b;
+    margin: 0 auto; /* Center align the card */
+    background-color: #fff; /* Added background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+
+  .profile-photo {
+    width: 100%;
+    background-color: var(--light-blue);
+    padding: 2rem; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Increased margin for better separation */
+
+    img {
+      width: 150px; /* Adjusted image size */
+      height: 150px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      margin-bottom: 1rem; /* Added margin for spacing */
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0; /* Removed default margin */
+    }
+  }
+
+  form {
+    label {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem; /* Added margin for spacing */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="password"] {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 1rem;
+      margin: 0.5rem 0 1rem; /* Adjusted margins for consistency */
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 5px; /* Increased border-radius for smoother look */
+      outline: none;
+      background-color: #f9f9f9; /* Added background color */
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--primary-color); /* Use your primary color variable */
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken; /* Darken on hover */
+      }
+    }
+  }
+}

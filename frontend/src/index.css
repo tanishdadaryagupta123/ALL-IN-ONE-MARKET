@@ -1,0 +1,187 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default body styles */
+body {
+  font-family:'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Root variables for easy theming */
+:root {
+  --color-light: #f4f4f4;
+  --color-dark: #333;
+  --color-primary: #50dfdb;
+  --color-secondary: #ff6347;
+  --font-size-base: 16px;
+  --font-size-large: 2rem;
+  --font-size-medium: 1.5rem;
+  --font-size-small: 1rem;
+}
+
+/* Global typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: var(--font-size-base);
+}
+
+/* Links */
+a {
+  color: rgb(237, 244, 243);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+button {
+  font-size: var(--font-size-base);
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: var(--font-size-base);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox utilities */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.carouselItem h4 {
+  color: #f4f4f4;
+}
+
+.carouselItem p {
+  color: #f4f4f4;}
+.adjust {
+  margin: 16px 0px 0px 0px;
+}
+.--btn {
+  /* //margin: 10px 0px 0px 110px; */
+  display: flex;
+}
+
+.--flex-between {
+  display: flex;
+}
+
+.--flex-between h2 {
+  display: flex;
+  margin: 0 280px 0px auto;
+  color: #c23434;
+} 
+
+
+

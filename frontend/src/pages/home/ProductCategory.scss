@@ -1,0 +1,66 @@
+.categories {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
+    gap: 2rem; /* Adds consistent spacing between cards */
+    justify-content: center; /* Center-aligns the cards */
+    padding: 2rem; /* Adds padding around the container */
+    background-color: #f0f0f0; /* Light background to contrast the cards */
+}
+
+.category {
+    flex: 1 1 calc(20rem - 2rem); /* Flex-grow, flex-shrink, flex-basis (width minus gap) */
+    max-width: 20rem; /* Ensure cards don’t exceed 20rem in width */
+    height: 25rem; /* Fixed height for consistency */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for more depth */
+    overflow: hidden;
+    padding: 1.5rem; /* Padding inside cards */
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center-align content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.category:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.category img {
+    width: 100%;
+    height: 70%; /* Adjusted to occupy 70% of the card height */
+    cursor: pointer;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Slight rounding for the image */
+    margin-bottom: 1rem; /* Space between the image and text */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.category img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.category button {
+    margin: 20px 40px ;
+    background-color: #00b7b7; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 0.75rem 1.5rem ; /* Adjusted padding */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer;
+    margin-top: auto; /* Push button to the bottom */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.category button:hover {
+    background-color: #008a8a; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.category h3 {
+    margin: 1rem 0; /* Spacing around the title */
+    font-size: 1.4rem; /* Adjusted the font size */
+    color: #444; /* Title color */
+    text-align: center; /* Center-align the title */
+}

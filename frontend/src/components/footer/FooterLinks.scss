@@ -1,0 +1,122 @@
+.contact-section {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: #4B2E83; /* Dark purple background */
+    padding: 2rem;
+    border-radius: 0px; /* Smooth rounded corners */
+  }
+  
+  .container.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Max width for the container */
+    background: #6c6ca3; /* Darker shade for inner background */
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+  }
+  
+  .contact-icon {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+  }
+  
+  .i {
+    font-size: 2rem; /* Size of the icons */
+    color: #fff; /* White color for the icons */
+    background: #f05454; /* Red background for the icon circles */
+    padding: 0.5rem;
+    border-radius: 50%; /* Circular icons */
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.2); /* Zoom in on hover */
+    }
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    flex: 1; /* Make sure text takes up space evenly */
+    text-align: center; /* Center the text */
+  }
+  
+  .btn {
+    background: #ff6f61; /* Orange button color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background: #ff4a39; /* Darker shade on hover */
+    }
+  }
+  .footer-section {
+    padding: 5rem 0;
+    background-color: #203962;
+  }
+  
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 2rem;
+  }
+  
+  .footer-logo {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .link-heading {
+    color: #fff;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .link-heading:before {
+    content: "";
+    //position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .footer-links li {
+    padding-bottom: 1rem;
+    text-decoration: none;
+  
+    a {
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+  }
+  
+  // Media Query 600px
+  @media screen and (max-width: 600px) {
+    .contact {
+      flex-direction: column;
+    }
+  
+    .contact > * {
+      margin: 3rem 0;
+    }
+  }
